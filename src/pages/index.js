@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -6,13 +8,15 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Tabi Site</title>
-        
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <div className={styles.top}>
+        <Image className={styles.topimg} src="/img/old_japan.jpg" alt="Mt.fuji" width={800} height={600} quality={100} />
+        <h1>
           What is Tabi?
         </h1>
+        </div>
 
         <div className="m-auto px-4 py-8 max-w-xl">
           <div className="bg-white shadow-2xl" >
