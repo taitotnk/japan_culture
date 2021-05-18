@@ -56,3 +56,13 @@
   white-space: nowrap;
   font-size: 4rem;
 }
+
+.scroll_arrow {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}

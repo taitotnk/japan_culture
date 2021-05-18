@@ -12,12 +12,22 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.top}>
-        <Image className={styles.topimg} src="/img/old_japan.jpg" alt="Mt.fuji" width={800} height={600} quality={100} />
-        <h1>
-          What is Tabi?
-        </h1>
+          <Image className={styles.topimg} src="/img/old_japan.jpg" 
+          alt="Mt.fuji" 
+          width={800} 
+          height={600} />
+          <h1>
+            What is Tabi?
+          </h1>
+          <div className={styles.scroll_arrow}>
+          <Image className="animate-bounce" src="/img/down-arrow.png"
+          alt="bottom-arrow"
+          width={100}
+          height={100}/>
+          </div>
         </div>
 
+        <div className="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 ...">
         <div className="m-auto px-4 py-8 max-w-xl">
           <div className="bg-white shadow-2xl" >
               <div>
@@ -36,6 +46,7 @@ export default function Home() {
                   </div>
               </div>
           </div>
+      </div>
       </div>
 
       </main>
