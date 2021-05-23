@@ -1,14 +1,53 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { card } from '../data/data'
 import styles from '../styles/Home.module.css'
+import {elastic as Menu} from 'react-burger-menu'
 
 export default function Home({ cardContents }) {
   return (
+    <>
+    <Menu width={320}>
+        <Link href='#what_tabi'>
+              <a className="menu-item">What is Tabi?</a>
+        </Link>
+        <Link href='#tabi_history'>
+              <a className="menu-item">History of Tabi</a>
+        </Link>
+        <Link href='#tabi_dev'>
+              <a className="menu-item">Development of Tabi</a>
+        </Link>
+        <Link href='#modern_tabi'>
+              <a className="menu-item">Modern Tabi</a>
+        </Link>
+        <Link href='#gyoda'>
+              <a className="menu-item">Gyoda is the town of Tabi</a>
+        </Link>
+    </Menu>
     <div className={styles.container}>
       <Head>
         <title>Tabi Site</title>
       </Head>
+
+      <header>
+      <div className="flex flex-wrap content-start">
+      <Link href='/'>
+              <a>
+              <div class="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
+              Japanese
+              </div>
+              </a>
+        </Link>
+        <Link href='/index_en'>
+              <a>
+              <div class="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
+              English
+              </div>
+              </a>
+        </Link>
+        </div>
+      </header>
 
       <main className={styles.main}>
         <div className={styles.top}>
@@ -29,7 +68,7 @@ export default function Home({ cardContents }) {
 
 {/* card---------------------------------------- */}
         {cardContents.map( cardContent => (
-          <div className="mt-10">
+          <div className="mt-10" id={cardContent.title_id}>
           <div className="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 ...">
           <div className="m-auto px-4 py-8 max-w-xl">
             <div className="bg-white shadow-2xl" >
@@ -67,14 +106,13 @@ export default function Home({ cardContents }) {
         ))}
 
 {/* ------------------------------------------------------ */}
-
-
       </main>
 
       <footer className={styles.footer}>
         <b>© 2021 Copyright Taito All Rights Reserved.</b>
       </footer>
     </div>
+    </>
   )
 }
 
