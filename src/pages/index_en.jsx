@@ -17,7 +17,7 @@ export default function Home({ cardContents }) {
           width={800} 
           height={600} />
           <h1>
-          What is Tabi?
+            What is Tabi?
           </h1>
           <div className={styles.scroll_arrow}>
           <Image className="animate-bounce" src="/img/down-arrow.png"
@@ -43,9 +43,9 @@ export default function Home({ cardContents }) {
                   <a href={cardContent.img_copyright_url}>{cardContent.img_copyright}</a>
                 </div>
                 <div className="px-4 py-2 mt-2 bg-white">
-                    <h2 className="font-bold text-4xl text-gray-800">{cardContent.sub_title_ja}</h2>
+                    <h2 className="font-bold text-4xl text-gray-800">{cardContent.sub_title_en}</h2>
                         <p className="sm:text-lg text-xs text-gray-700 px-2 mr-1 my-3">
-                          {cardContent.description_ja}
+                          {cardContent.description_en}
                         </p>
                 </div>
                 {cardContent.button && (
@@ -55,7 +55,7 @@ export default function Home({ cardContents }) {
                     type="button"
                     className="border border-indigo-500 text-indigo-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-indigo-600 focus:outline-none focus:shadow-outline"
                     >
-                    {cardContent.button_text_ja}
+                    {cardContent.button_text_en}
                     </button>
                     </a>
                     </div>
