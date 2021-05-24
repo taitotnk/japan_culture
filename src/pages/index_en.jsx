@@ -39,13 +39,6 @@ export default function Home({ cardContents }) {
               </div>
               </a>
         </Link>
-        <Link href='/index_en'>
-              <a>
-              <div className="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
-              English
-              </div>
-              </a>
-        </Link>
         </div>
       </header>
 

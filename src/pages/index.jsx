@@ -31,13 +31,6 @@ export default function Home({ cardContents }) {
       </Head>
       <header>
       <div className="flex flex-wrap content-start ">
-      <Link href=''>
-              <a>
-              <div className="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
-              Japanese
-              </div>
-              </a>
-        </Link>
         <Link href='/index_en'>
               <a>
               <div className="border-2 border-blue-600 rounded-lg px-3 py-2 text-blue-400 cursor-pointer hover:bg-blue-600 hover:text-blue-200">
