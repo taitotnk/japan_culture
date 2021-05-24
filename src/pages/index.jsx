@@ -65,7 +65,6 @@ export default function Home({ cardContents }) {
             <div className="bg-white shadow-2xl" >
                 <Image src={`/img${cardContent.img}`}
                 alt="tabi_img"
-                // layout="responsive"
                 width={cardContent.img_width}
                 height={cardContent.img_height}>
                 </Image>
